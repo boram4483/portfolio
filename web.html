@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>웹 콘텐츠 | 황보람의 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="home">
+
+  <!-- ============ 상단 내비게이션 ============ -->
+  <!-- 현재 페이지 메뉴에 class="active" 가 붙어 있어요 -->
+  <header class="nav">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/duck.png" alt="" />
+      <span>황보람 포트폴리오</span>
+    </a>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="web.html" class="active">웹 콘텐츠</a>
+      <a href="print.html">패키지·인쇄물</a>
+      <a href="ai.html">AI 활용</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <p class="lane-tag">LANE 02</p>
+    <h2> 웹 콘텐츠, 그리고 브랜드<span class="dot">!</span></h2>
+    <p class="section-desc">배너·상세페이지는 기본기, 브랜드 기획은 주종목입니다.</p>
+
+    <!-- 작업물 카드: img 경로와 제목/설명을 바꿔서 사용하세요. 카드를 복사하면 늘어납니다 -->
+    <!--
+    [갤러리 사용법]
+    카드의 data-images 에 보여줄 이미지를 쉼표로 나열하면
+    카드를 눌렀을 때 차례로 넘겨볼 수 있어요. 예:
+    data-images="assets/banner-01.jpg, assets/banner-02.jpg, assets/banner-03.jpg"
+    세로로 긴 상세페이지 이미지도 갤러리 안에서 스크롤되니 그대로 넣으면 됩니다.
+  -->
+    <div class="work-grid">
+      <a class="work-card" href="#" data-images="assets/banner_thumb_4x3.jpg">
+        <div class="thumb"><img src="assets/banner_thumb_4x3.jpg" alt=""
+            onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>프로모션 배너</h3>
+        <p>배너는 기본이죠, 매달 바뀌는 콘텐츠!</p>
+      </a>
+      <a class="work-card" href="#"
+        data-images="assets/productpage/1.jpg, assets/productpage/2.jpg, assets/productpage/3.jpg, assets/productpage/4.jpg, assets/productpage/5.jpg, assets/productpage/6.jpg,assets/productpage/7.jpg">
+        <div class="thumb"><img src="assets/productpage/1.jpg" alt=""
+            onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>상품 상세페이지</h3>
+        <p>알마씨엘로, 카페 모모라<br>상세페이지 기획·촬영/디자인</p>
+      </a>
+      <a class="work-card" href="#" data-images="assets/eventpage.jpg">
+        <div class="thumb"><img src="assets/eventpage.jpg" alt=""
+            onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>이벤트 페이지</h3>
+        <p>이벤트·프로모션 페이지도 문제없죠!</p>
+      </a>
+      <a class="work-card" href="#"
+        data-images="assets/cardnews/1.png, assets/cardnews/2.png, assets/cardnews/3.png, assets/cardnews/4.png, assets/cardnews/5.png, assets/cardnews/6.png">
+        <div class="thumb"><img src="assets/cardnews/1.png" alt=""
+            onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>궁금한건 못참아! 카드뉴스</h3>
+        <p>카드뉴스 내용 기획·디자인</p>
+      </a>
+      <a class="work-card" href="#"
+        data-images="assets/instagram/1.jpg,assets/instagram/2.jpg, assets/instagram/3.jpg, assets/instagram/4.jpg, assets/instagram/5.jpg, assets/instagram/6.jpg, assets/instagram/7.jpg, assets/instagram/8.jpg,assets/instagram/9.jpg,assets/instagram/10.jpg,   ">
+        <div class="thumb"><img src="assets/instagram/1.jpg" alt=""
+            onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>인스타그램 콘텐츠 제작</h3>
+        <p>심리테스트, MBTI별 커피 추천 등
+          <br>참여형 콘텐츠 기획·디자인</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 푸터 ============ -->
+  <footer class="footer">
+    <img src="assets/duck_run.png" alt="" />
+    <p>봐주셔서 감사합니다! 오늘도 한 바퀴 더 🏃</p>
+    <a href="index.html">← 랜딩으로 돌아가기</a>
+  </footer>
+
+  <script src="scripts/gallery.js"></script>
+</body>
+
+</html>
