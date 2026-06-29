@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 활용 | 황보람의 포트폴리오</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="home">
+
+<!-- ============ 상단 내비게이션 ============ -->
+<!-- 현재 페이지 메뉴에 class="active" 가 붙어 있어요 -->
+<header class="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="assets/duck.png" alt="" />
+    <span>황보람 포트폴리오</span>
+  </a>
+  <nav>
+      <a href="about.html">About</a>
+      <a href="web.html">웹 콘텐츠</a>
+      <a href="print.html">패키지·인쇄물</a>
+      <a href="ai.html" class="active">AI 활용</a>
+    </nav>
+</header>
+
+<section class="section">
+  <p class="lane-tag">LANE 04</p>
+  <h2>AI 활용<span class="dot">.</span></h2>
+  <p class="section-desc">AI 도구를 실무에 활용한 작업 — 영상 제작부터 자동화 프로그램까지</p>
+
+  <!-- ===== 1) AI 영상 ===== -->
+  <div class="sub-block">
+    <h4>AI 영상 제작</h4>
+    <!--
+      유튜브 영상 넣는 법:
+      영상 주소가 https://www.youtube.com/watch?v=abc123 이라면
+      iframe src 의 VIDEO_ID 자리에 abc123 을 넣으면 됩니다.
+      video-card 블록을 복사하면 영상이 늘어납니다.
+    -->
+<div class="video-grid">
+  <div class="video-card">
+    <div class="video-frame">
+      <video controls muted preload="metadata">
+        <source src="assets/wet-hulling.mp4" type="video/mp4">
+      </video>
+    </div>
+    <h3>AI 브랜드 홍보 영상</h3>
+    <p class="tags">
+      <span class="tag">Google Veo</span>
+      <span class="tag">Premiere Pro</span>
+      <span class="tag">ElevenLabs</span>
+    </p>
+  </div>
+
+  <div class="video-card">
+    <div class="video-frame">
+            <video controls muted preload="metadata">
+        <source src="assets/coffee.mp4" type="video/mp4">
+      </video>
+    </div>
+    <h3>AI 동물 영상</h3>
+    <p class="tags">
+      <span class="tag">Google Veo</span>
+      <span class="tag">Premiere Pro</span>
+    </p>
+  </div>
+</div>
+
+  <!-- ===== 2) AI 이미지 · 캐릭터 ===== -->
+  <div class="sub-block">
+    <h4>AI 이미지 · 캐릭터</h4>
+    <!--
+    [갤러리 사용법]
+    카드의 data-images 에 보여줄 이미지를 쉼표로 나열하면
+    카드를 눌렀을 때 차례로 넘겨볼 수 있어요. 예:
+    data-images="assets/banner-01.jpg, assets/banner-02.jpg, assets/banner-03.jpg"
+    세로로 긴 상세페이지 이미지도 갤러리 안에서 스크롤되니 그대로 넣으면 됩니다.
+  -->
+  <div class="work-grid">
+      <a class="work-card" href="#" data-images="assets/알랑이(일러).png">
+        <div class="thumb"><img src="assets/알랑이(기본).png" alt="" onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>브랜드 캐릭터 생성</h3>
+        <p>나노바나나로 캐릭터 시안 제작 후<br>
+          일러스트 정리</p>
+        <p class="tags"><span class="tag">Nano Banana</span><span class="tag">Illustrator</span></p>
+      </a>
+      <a class="work-card" href="#" data-images="assets/프롬프트.jpg">
+        <div class="thumb"><img src="assets/안경-썸네일.jpg" alt="" onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>제품 연출 이미지</h3>
+        <p>프롬프트를 이용해 기존 이미지를<BR>깔끔하게 변환</p>
+        <p class="tags"><span class="tag">Chat GPT</span><span class="tag">Photoshop</span></p>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== 3) AI 자동화 · 개발 ===== -->
+  <div class="sub-block">
+    <h4>AI 자동화 · 개발</h4>
+    <div class="work-grid">
+      <a class="work-card" href="#" data-images="assets/쿠팡.png">
+        <div class="thumb"><img src="assets/쿠팡.png" alt="" onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>쿠팡 상세페이지 자동 교체 프로그램</h3>
+        <p>Claude와 함께 코딩한<br>상세페이지 일괄 교체 자동화 툴</p>
+        <p class="tags"><span class="tag">Claude</span><span class="tag">VS Code</span></p>
+      </a>
+      <a class="work-card" href="#" data-images="assets/블로그 프롬프트.png">
+        <div class="thumb"><img src="assets/블로그.jpg" alt="" onerror="this.parentElement.classList.add('empty')" /></div>
+        <h3>AI 블로그 콘텐츠 운영</h3>
+        <p>AI로 초안 작성 → 직접 편집·발행하는<br>콘텐츠 워크플로</p>
+        <p class="tags"><span class="tag">Chat GPT</span></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 푸터 ============ -->
+<footer class="footer">
+  <img src="assets/duck_run.png" alt="" />
+  <p>봐주셔서 감사합니다! 오늘도 한 바퀴 더 🏃</p>
+  <a href="index.html">← 랜딩으로 돌아가기</a>
+</footer>
+
+<script src="scripts/gallery.js"></script>
+</body>
+</html>
