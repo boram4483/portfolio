@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>열정 오리의 포트폴리오</title>
+
+<!-- 폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- 스타일 -->
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="landing">
+
+<main class="stage" id="stage">
+  <div class="copy">
+    <h1>안녕하세요, 열정으로 달리는<br />웹디자이너 황보람입니다<span class="dot">!</span></h1>
+   
+  </div>
+
+  <div class="sun" aria-hidden="true"></div>
+
+  <span class="hint">오리를 눌러 포트폴리오 보기!</span>
+
+  <button class="duck-btn" id="duck" aria-label="포트폴리오 홈으로 이동">
+    <img src="assets/duck.png" alt="" id="duckImg" />
+  </button>
+  <div class="shadow" aria-hidden="true"></div>
+
+  <div class="track" aria-hidden="true">
+    <div class="lane"></div>
+    <div class="lane"></div>
+  </div>
+</main>
+
+<!-- 스크립트 (body 끝에서 불러와야 위의 요소들을 찾을 수 있어요) -->
+<script src="scripts/main.js"></script>
+</body>
+</html>
